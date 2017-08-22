@@ -1,3 +1,16 @@
-body {
-  background-color: green;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+$green: rgb(29, 210, 175);
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+@import "topbar.scss";
+@import "header.scss";
+@import "travel.scss";

@@ -1,0 +1,29 @@
+{
+  "name": "kate",
+  "version": "1.0.0",
+  "description": "ryan",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-sass -o css main.scss -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --server --files '**'"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chornoslav/Voyage.git"
+  },
+  "keywords": [
+    "voyage"
+  ],
+  "author": "chornoslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chornoslav/Voyage/issues"
+  },
+  "homepage": "https://github.com/Chornoslav/Voyage#readme"
+}

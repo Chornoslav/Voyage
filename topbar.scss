@@ -1,0 +1,36 @@
+.topbar {
+  background-color: rgb(44, 62, 80);
+  color: white;
+  font-size: 16px;
+
+  .member {
+
+    .member-item {
+      display: inline-block;
+      padding: 10px;
+      border-right: 1px solid black;
+      box-shadow: 2px 0 3px -2px #888;
+
+      span {
+        color: $green;
+      }
+      i {
+        padding-right: 10px;
+      }
+    }
+    .socials {
+      float: right;
+
+      i {
+        display: inline-block;
+        padding: 11px;
+        border-right: 1px solid black;
+        box-shadow: 2px 0 2px -2px #888;
+      }
+      i:first-child {
+        border-left: 1px solid black;
+        box-shadow: 2px 0 2px -2px #888;
+      }
+    }
+  }
+}

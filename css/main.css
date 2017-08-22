@@ -1,2 +1,79 @@
-body {
-  background-color: green; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
+.topbar {
+  background-color: #2c3e50;
+  color: white;
+  font-size: 16px; }
+  .topbar .member .member-item {
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid black;
+    box-shadow: 2px 0 3px -2px #888; }
+    .topbar .member .member-item span {
+      color: #1dd2af; }
+    .topbar .member .member-item i {
+      padding-right: 10px; }
+  .topbar .member .socials {
+    float: right; }
+    .topbar .member .socials i {
+      display: inline-block;
+      padding: 11px;
+      border-right: 1px solid black;
+      box-shadow: 2px 0 2px -2px #888; }
+    .topbar .member .socials i:first-child {
+      border-left: 1px solid black;
+      box-shadow: 2px 0 2px -2px #888; }
+
+.header {
+  font-size: 0; }
+  .header .logo {
+    width: 20%;
+    float: left;
+    padding: 10px;
+    margin: 16px 0;
+    font-weight: bold; }
+    .header .logo p {
+      font-size: 40px;
+      position: relative; }
+      .header .logo p img {
+        position: absolute; }
+      .header .logo p .plane {
+        top: 15px;
+        left: 40px; }
+      .header .logo p .vector {
+        top: -2px;
+        left: -18px; }
+      .header .logo p span {
+        color: #1dd2af; }
+  .header .menu {
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 22px 0; }
+    .header .menu .menu-item {
+      font-size: 16px;
+      display: inline-block;
+      float: left;
+      padding: 20px 10px; }
+      .header .menu .menu-item:first-child {
+        color: #1dd2af; }
+    .header .menu .search {
+      padding: 0; }
+      .header .menu .search i {
+        font-size: 28px;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 10px; }
+
+.travel {
+  background-image: url("/images/travel.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
