@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 $green: rgb(29, 210, 175);
+$dark: rgb(44, 62, 80);
 
 .container {
   width: 1024px;
   margin: 0 auto;
 }
 
-@import "topbar.scss";
-@import "header.scss";
-@import "travel.scss";
+@import "main/topbar.scss";
+@import "main/header.scss";
+@import "main/travel.scss";
+@import "main/form.scss";

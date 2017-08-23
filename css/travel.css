@@ -1,4 +1,9 @@
 .travel {
   background-image: url("/images/travel.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 270px 0 210px; }
+  .travel h1 {
+    font-size: 40px; }
+  .travel p {
+    font-size: 24px; }
