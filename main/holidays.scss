@@ -1,0 +1,92 @@
+.holidays{
+  padding: 75px 0 160px;
+  background: linear-gradient(0deg, rgba(44,62,80,0.9), rgba(44,62,80,0.9)), url('/images/back-city.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  p{
+    color: #9fb0c0;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+
+    }
+    .icon{
+      width: 120px;
+      height: 120px;
+      margin: 0 6px;
+      background-size: contain;
+
+      & > p{
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      &:hover > p{
+        color: $green;
+      }
+      .icon1{
+        background-image: url("/images/cruise.png");
+        background-repeat: no-repeat;
+      }
+      .icon1:hover{
+        background-image: url("/images/cruise1.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .icon2{
+      background-image: url("/images/city.png");
+      background-repeat: no-repeat;
+    }
+    .icon2:hover{
+      background-image: url("/images/city1.png");
+      background-repeat: no-repeat;
+    }
+    .icon3{
+      background-image: url("/images/honeymoon1.png");
+      background-repeat: no-repeat;
+    }
+    .icon3:hover{
+      background-image: url("/images/honeymoon.png");
+      background-repeat: no-repeat;
+    }
+    .icon4{
+      background-image: url("/images/adventure.png");
+      background-repeat: no-repeat;
+    }
+    .icon4:hover{
+      background-image: url("/images/adventure1.png");
+      background-repeat: no-repeat;
+    }
+    .icon5{
+      background-image: url("/images/safari.png");
+      background-repeat: no-repeat;
+    }
+    .icon5:hover{
+      background-image: url("/images/safari1.png");
+      background-repeat: no-repeat;
+    }
+    .icon6{
+      background-image: url("/images/beach.png");
+      background-repeat: no-repeat;
+    }
+    .icon6:hover{
+      background-image: url("/images/beach1.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 $green: rgb(29, 210, 175);
 $dark: rgb(44, 62, 80);
@@ -16,3 +17,8 @@ $dark: rgb(44, 62, 80);
 @import "main/header.scss";
 @import "main/travel.scss";
 @import "main/form.scss";
+@import "main/special.scss";
+@import "main/holidays.scss";
+@import "main/clients.scss";
+@import "main/footer.scss";
+@import "main/botfooter";

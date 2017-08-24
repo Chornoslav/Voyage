@@ -1,0 +1,26 @@
+.special {
+  text-align: center;
+  margin: 80px 0 120px; }
+  .special h1 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 36px; }
+  .special p {
+    margin-bottom: 50px;
+    font-size: 24px; }
+  .special .offers .background {
+    background-color: #eeeeee;
+    margin: 0 20px; }
+    .special .offers .background .img-box {
+      padding: 10px; }
+      .special .offers .background .img-box img {
+        height: 200px;
+        width: 250px;
+        display: inline-block; }
+    .special .offers .background .img-text {
+      text-align: left;
+      padding: 0 20px; }
+      .special .offers .background .img-text h1 {
+        font-size: 24px; }
+      .special .offers .background .img-text p {
+        font-size: 14px; }

@@ -1,0 +1,63 @@
+.holidays {
+  padding: 70px 0 110px;
+  background: linear-gradient(0deg, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("/images/back-city.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .holidays h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .holidays p {
+    color: #9fb0c0;
+    font-size: 24px;
+    margin-bottom: 50px; }
+  .holidays .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .holidays .icons-container .icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 6px;
+      background-size: contain; }
+      .holidays .icons-container .icon:hover > p {
+        color: #1dd2af; }
+      .holidays .icons-container .icon .icon1 {
+        background-image: url("/images/cruise.png");
+        background-repeat: no-repeat; }
+      .holidays .icons-container .icon .icon1:hover {
+        background-image: url("/images/cruise1.png");
+        background-repeat: no-repeat; }
+    .holidays .icons-container .icon2 {
+      background-image: url("/images/city.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon2:hover {
+      background-image: url("/images/city1.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon3 {
+      background-image: url("/images/honeymoon1.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon3:hover {
+      background-image: url("/images/honeymoon.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon4 {
+      background-image: url("/images/adventure.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon4:hover {
+      background-image: url("/images/adventure1.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon5 {
+      background-image: url("/images/safari.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon5:hover {
+      background-image: url("/images/safari1.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon6 {
+      background-image: url("/images/beach.png");
+      background-repeat: no-repeat; }
+    .holidays .icons-container .icon6:hover {
+      background-image: url("/images/beach1.png");
+      background-repeat: no-repeat; }
