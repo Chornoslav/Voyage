@@ -18,6 +18,9 @@
     padding: 10px;
     border-right: 1px solid black;
     box-shadow: 2px 0 3px -2px #888; }
+    .topbar .member .member-item:hover {
+      color: #1dd2af;
+      cursor: pointer; }
     .topbar .member .member-item span {
       color: #1dd2af; }
     .topbar .member .member-item i {
@@ -29,6 +32,9 @@
       padding: 11px;
       border-right: 1px solid black;
       box-shadow: 2px 0 2px -2px #888; }
+      .topbar .member .socials i:hover {
+        color: #1dd2af;
+        cursor: pointer; }
     .topbar .member .socials i:first-child {
       border-left: 1px solid black;
       box-shadow: 2px 0 2px -2px #888; }
@@ -85,7 +91,7 @@
   text-align: center; }
   .travel .slide1 {
     padding: 250px 0 200px;
-    background: linear-gradient(0deg, rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url("/images/travel.png");
+    background: linear-gradient(0deg, rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url("../images/travel.png");
     background-size: cover;
     background-repeat: no-repeat; }
     .travel .slide1 h1 {
@@ -101,9 +107,15 @@
         display: inline-block;
         text-align: center;
         height: 60px;
-        font-size: 24px;
-        line-height: 60px;
-        text-transform: uppercase; }
+        border-radius: 3px; }
+        .travel .slide1 .button-block .button a {
+          text-transform: uppercase;
+          font-size: 24px;
+          line-height: 60px;
+          text-decoration: none;
+          color: white; }
+          .travel .slide1 .button-block .button a:hover {
+            cursor: pointer; }
       .travel .slide1 .button-block .button1 {
         width: 260px;
         background-color: #1dd2af;
@@ -114,7 +126,7 @@
         border: 2px solid white; }
   .travel .slide2 {
     padding: 250px 0 200px;
-    background: linear-gradient(0deg, rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url("/images/back-city.png");
+    background: linear-gradient(0deg, rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url("../images/back-city.png");
     background-size: cover;
     background-repeat: no-repeat; }
     .travel .slide2 h1 {
@@ -130,9 +142,15 @@
         display: inline-block;
         text-align: center;
         height: 60px;
-        font-size: 24px;
-        line-height: 60px;
-        text-transform: uppercase; }
+        border-radius: 3px; }
+        .travel .slide2 .button-block .button a {
+          text-transform: uppercase;
+          font-size: 24px;
+          line-height: 60px;
+          text-decoration: none;
+          color: white; }
+          .travel .slide2 .button-block .button a:hover {
+            cursor: pointer; }
       .travel .slide2 .button-block .button1 {
         width: 260px;
         background-color: #1dd2af;
@@ -143,7 +161,7 @@
         border: 2px solid white; }
   .travel .slide3 {
     padding: 250px 0 200px;
-    background: linear-gradient(0deg, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url("/images/2.png");
+    background: linear-gradient(0deg, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url("../images/2.png");
     background-size: cover;
     background-repeat: no-repeat; }
     .travel .slide3 h1 {
@@ -159,9 +177,15 @@
         display: inline-block;
         text-align: center;
         height: 60px;
-        font-size: 24px;
-        line-height: 60px;
-        text-transform: uppercase; }
+        border-radius: 3px; }
+        .travel .slide3 .button-block .button a {
+          text-transform: uppercase;
+          font-size: 24px;
+          line-height: 60px;
+          text-decoration: none;
+          color: white; }
+          .travel .slide3 .button-block .button a:hover {
+            cursor: pointer; }
       .travel .slide3 .button-block .button1 {
         width: 260px;
         background-color: #1dd2af;
@@ -170,14 +194,20 @@
       .travel .slide3 .button-block .button2 {
         width: 160px;
         border: 2px solid white; }
-  .travel button:first-child {
+  .travel .fa {
+    font-size: 76px;
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 20px 0 30px;
+    cursor: pointer; }
+  .travel .fa-angle-left {
     display: block;
     position: absolute;
     top: 50%;
     left: 0;
     z-index: 10;
     content: '1'; }
-  .travel button:last-child {
+  .travel .fa-angle-right {
     display: block;
     position: absolute;
     top: 50%;
@@ -219,37 +249,73 @@
         flex-grow: 1;
         height: 40px;
         border: 0; }
+      .form .container form input[type='submit']:hover {
+        cursor: pointer; }
 
 .special {
   text-align: center;
   margin: 80px 0 120px; }
   .special h1 {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 36px; }
   .special p {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 24px; }
+  .special .offers:after, .special .offers:before {
+    content: "";
+    background: #FAFAFA;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 12%;
+    z-index: 100; }
+  .special .offers:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
+  .special .offers:before {
+    left: 0;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); }
   .special .offers .background {
-    background-color: #eeeeee;
-    margin: 0 20px; }
-    .special .offers .background .img-box {
-      padding: 10px; }
-      .special .offers .background .img-box img {
-        height: 200px;
-        width: 250px;
-        display: inline-block; }
-    .special .offers .background .img-text {
-      text-align: left;
-      padding: 0 20px; }
-      .special .offers .background .img-text h1 {
-        font-size: 24px; }
-      .special .offers .background .img-text p {
-        font-size: 14px; }
+    margin: 0 19px;
+    padding: 15px 1px; }
+    .special .offers .background .box {
+      background-color: #eeeeee;
+      padding: 1px; }
+      .special .offers .background .box .img-box {
+        padding: 5px; }
+        .special .offers .background .box .img-box img {
+          height: 200px;
+          width: 100%;
+          display: inline-block; }
+      .special .offers .background .box .img-text {
+        text-align: left;
+        margin: -9px 5px 5px; }
+        .special .offers .background .box .img-text h1 {
+          font-size: 24px;
+          color: #626262; }
+        .special .offers .background .box .img-text p {
+          font-size: 14px;
+          color: #626262; }
+  .special .offers .slick-slide {
+    transform: scale(1);
+    transition: .3s ease-in-out all; }
+  .special .offers .slick-slide.slick-center {
+    transform: scale(1.1); }
+  .special .offers .slick-center {
+    border-radius: 5px; }
+    .special .offers .slick-center .box {
+      background-color: #1dd2af; }
+      .special .offers .slick-center .box .img-text {
+        background-color: #2c3e50; }
+        .special .offers .slick-center .box .img-text h1 {
+          color: white; }
+        .special .offers .slick-center .box .img-text p {
+          color: #758695; }
 
 .holidays {
   padding: 75px 0 160px;
-  background: linear-gradient(0deg, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("/images/back-city.png");
+  background: linear-gradient(0deg, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("../images/back-city.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -278,40 +344,40 @@
       .holidays .icons-container .icon:hover > p {
         color: #1dd2af; }
       .holidays .icons-container .icon .icon1 {
-        background-image: url("/images/cruise.png");
+        background-image: url("../images/cruise.png");
         background-repeat: no-repeat; }
       .holidays .icons-container .icon .icon1:hover {
-        background-image: url("/images/cruise1.png");
+        background-image: url("../images/cruise1.png");
         background-repeat: no-repeat; }
     .holidays .icons-container .icon2 {
-      background-image: url("/images/city.png");
+      background-image: url("../images/city.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon2:hover {
-      background-image: url("/images/city1.png");
+      background-image: url("../images/city1.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon3 {
-      background-image: url("/images/honeymoon1.png");
+      background-image: url("../images/honeymoon1.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon3:hover {
-      background-image: url("/images/honeymoon.png");
+      background-image: url("../images/honeymoon.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon4 {
-      background-image: url("/images/adventure.png");
+      background-image: url("../images/adventure.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon4:hover {
-      background-image: url("/images/adventure1.png");
+      background-image: url("../images/adventure1.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon5 {
-      background-image: url("/images/safari.png");
+      background-image: url("../images/safari.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon5:hover {
-      background-image: url("/images/safari1.png");
+      background-image: url("../images/safari1.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon6 {
-      background-image: url("/images/beach.png");
+      background-image: url("../images/beach.png");
       background-repeat: no-repeat; }
     .holidays .icons-container .icon6:hover {
-      background-image: url("/images/beach1.png");
+      background-image: url("../images/beach1.png");
       background-repeat: no-repeat; }
 
 .clients {
@@ -328,7 +394,7 @@
     font-size: 20px; }
   .clients .quote {
     border: 1px solid lightgray;
-    border-top: 4px solid #1dd2af;
+    opacity: 0.4;
     display: inline-block;
     margin: 0 20px;
     text-align: left;
@@ -342,6 +408,10 @@
       color: #1dd2af; }
     .clients .quote span {
       font-size: 12px; }
+  .clients .slick-center {
+    border-top: 4px solid #1dd2af;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1; }
 
 .footer {
   background-color: #2c3e50;
@@ -409,6 +479,11 @@
         color: white;
         font-size: 20px;
         width: 25%; }
+        .footer .container .socials li a {
+          text-decoration: none;
+          color: white; }
+          .footer .container .socials li a:hover {
+            color: #1dd2af; }
 
 .bot-footer {
   background-color: #2c3e50;
@@ -424,8 +499,11 @@
       text-decoration: none;
       font-size: 16px;
       margin: 0 6px 20px; }
-      .bot-footer ul li:hover {
-        color: #1dd2af; }
+      .bot-footer ul li a {
+        text-decoration: none;
+        color: white; }
+        .bot-footer ul li a:hover {
+          color: #1dd2af; }
   .bot-footer p {
     font-size: 12px;
     color: #9fb0c0; }

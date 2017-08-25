@@ -15,7 +15,7 @@
   }
   .quote{
     border: 1px solid lightgray;
-    border-top: 4px solid $green;
+    opacity: 0.4;
     display: inline-block;
     margin: 0 20px;
     text-align: left;
@@ -33,5 +33,10 @@
     span{
       font-size: 12px;
     }
+  }
+  .slick-center {
+    border-top: 4px solid $green;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
   }
 }

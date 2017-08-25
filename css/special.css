@@ -3,24 +3,49 @@
   margin: 80px 0 120px; }
   .special h1 {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 36px; }
   .special p {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 24px; }
+  .special .offers:after, .special .offers:before {
+    content: "";
+    background: #FAFAFA;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 12%;
+    z-index: 100; }
+  .special .offers:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
+  .special .offers:before {
+    left: 0;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); }
   .special .offers .background {
-    background-color: #eeeeee;
-    margin: 0 20px; }
-    .special .offers .background .img-box {
-      padding: 10px; }
-      .special .offers .background .img-box img {
-        height: 200px;
-        width: 250px;
-        display: inline-block; }
-    .special .offers .background .img-text {
-      text-align: left;
-      padding: 0 20px; }
-      .special .offers .background .img-text h1 {
-        font-size: 24px; }
-      .special .offers .background .img-text p {
-        font-size: 14px; }
+    margin: 0 19px;
+    padding: 15px 1px; }
+    .special .offers .background .box {
+      background-color: #eeeeee;
+      padding: 1px; }
+      .special .offers .background .box .img-box {
+        padding: 5px; }
+        .special .offers .background .box .img-box img {
+          height: 200px;
+          width: 100%;
+          display: inline-block; }
+      .special .offers .background .box .img-text {
+        text-align: left;
+        margin: -9px 5px 5px; }
+        .special .offers .background .box .img-text h1 {
+          font-size: 24px;
+          color: #626262; }
+        .special .offers .background .box .img-text p {
+          font-size: 14px;
+          color: #626262; }
+  .special .offers .slick-slide {
+    transform: scale(1);
+    transition: .3s ease-in-out all; }
+  .special .offers .slick-slide.slick-center {
+    opacity: 1;
+    transform: scale(1.08); }

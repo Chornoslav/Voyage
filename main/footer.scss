@@ -95,6 +95,16 @@
         color: white;
         font-size: 20px;
         width: 25%;
+
+
+        a{
+          text-decoration: none;
+          color: white;
+
+          &:hover{
+            color: $green;
+          }
+        }
       }
     }
   }

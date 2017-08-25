@@ -11,6 +11,10 @@
       border-right: 1px solid black;
       box-shadow: 2px 0 3px -2px #888;
 
+      &:hover{
+        color: $green;
+        cursor: pointer;
+      }
       span {
         color: $green;
       }
@@ -26,6 +30,11 @@
         padding: 11px;
         border-right: 1px solid black;
         box-shadow: 2px 0 2px -2px #888;
+
+        &:hover{
+          color: $green;
+          cursor: pointer;
+        }
       }
       i:first-child {
         border-left: 1px solid black;

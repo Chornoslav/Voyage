@@ -2,41 +2,100 @@
   text-align: center;
   margin: 80px 0 120px;
 
+
   h1{
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 36px;
   }
   p{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 24px;
   }
   .offers {
+    &:after, &:before {
+      content: "";
+      background: #FAFAFA;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 12%;
+      z-index: 100;
+    }
+    &:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    }
+    &:before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
 
       .background{
-        background-color: rgb(238, 238, 238);
-        margin: 0 20px;
+        margin: 0 19px;
+        padding: 15px 1px;
 
-        .img-box {
-          padding: 10px;
+        .box {
+          background-color: rgb(238, 238, 238);
+          padding: 1px;
 
-          img{
-            height: 200px;
-            width: 250px;
-            display: inline-block;
+          .img-box {
+            padding: 5px;
+
+            img{
+              height: 200px;
+              width: 100%;
+              display: inline-block;
+            }
           }
-        }
-        .img-text {
-          text-align: left;
-          padding: 0 20px;
+          .img-text {
+            text-align: left;
+            margin: -9px 5px 5px;
 
-          h1{
-            font-size: 24px;
-          }
-          p{
-            font-size: 14px;
+
+            h1{
+              font-size: 24px;
+              color: rgb(98, 98, 98);
+            }
+            p{
+              font-size: 14px;
+              color: rgb(98, 98, 98);
+            }
           }
         }
       }
+    .slick-slide {
+      transform: scale(1);
+      transition: .3s ease-in-out all;
+    }
+    .slick-slide.slick-center {
+      transform: scale(1.1);
+    }
+    .slick-center {
+      //padding: 0;
+      border-radius: 5px;
+
+      h1{
+        //margin-top: 10px;
+      }
+
+      .box{
+        background-color: $green;
+
+        .img-text{
+          //padding-bottom: 25px;
+          background-color: $dark;
+          //margin: -19px 5px 5px;
+
+          h1{
+            color: white;
+          }
+          p{
+            color: rgb(117, 134, 149);
+          }
+        }
+      }
+    }
   }
+
 }
