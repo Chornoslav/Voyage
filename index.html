@@ -18,12 +18,12 @@
                 <div class="member-item"><i class="fa fa-user-o"></i>Customer Login</div>
                 <div class="member-item"><i class="fa fa-file-code-o"></i>Not a Member ? <span>Register</span></div>
                 <div class="member-item">Call Us Now: 815-123-4567</div>
-                <div class="socials">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-tumblr"></i>
-                    <i class="fa fa-pinterest-p"></i>
-                </div>
+            </div>
+            <div class="socials">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-tumblr"></i>
+                <i class="fa fa-pinterest-p"></i>
             </div>
         </div>
     </div>
@@ -323,8 +323,9 @@
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 2
+                        centerPadding: '10px',
+                        slidesToShow: 1,
+                        dots: true
                     }
                 }
             ]
@@ -350,11 +351,22 @@
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 2
+                        centerPadding: '10px',
+                        slidesToShow: 1,
+                        dots: true
                     }
                 }
             ]
+        });
+        $('.icons-container').slick({
+            breakpoint: 575,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '10px',
+                slidesToShow: 1,
+                dots: true
+            }
         });
     </script>
 </body>

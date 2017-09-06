@@ -67,6 +67,10 @@
     .slick-slide {
       transform: scale(1);
       transition: .3s ease-in-out all;
+
+      &:focus{
+        outline: none;
+      }
     }
     .slick-slide.slick-center {
       transform: scale(1.1);

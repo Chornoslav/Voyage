@@ -22,3 +22,74 @@ $dark: rgb(44, 62, 80);
 @import "main/clients.scss";
 @import "main/footer.scss";
 @import "main/botfooter";
+
+@media screen and (max-width: 575px) {
+  .container{
+    width: 100%;
+  }
+  .topbar{
+    .member{
+      .member-item{
+        display: block;
+        border: none;
+        box-shadow: none;
+      }
+    }
+    .socials{
+      float: none;
+      display: block;
+
+      .fa{
+        display: inline-block;
+        padding: 11px 0;
+        border-right: none;
+        box-shadow: none;
+        width: 24%;
+        text-align: center;
+
+        &:first-child{
+          border-right: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .holidays .container{
+    .icons-container{
+      .icon{
+        text-align: center;
+        display: inline-block;
+
+        img{
+
+        }
+      }
+      button{
+        display: none !important;
+      }
+    }
+  }
+  .footer{
+    .container{
+      display: block;
+      .col{
+        width: 100%;
+        padding-bottom: 30px;
+
+        &:last-child{
+          padding-bottom: 0px;
+        }
+
+        .socials{
+          li{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .form{
+    display: none;
+  }
+}
+

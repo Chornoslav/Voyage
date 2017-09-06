@@ -4,6 +4,7 @@
   font-size: 16px;
 
   .member {
+    display: inline-block;
 
     .member-item {
       display: inline-block;
@@ -22,24 +23,25 @@
         padding-right: 10px;
       }
     }
-    .socials {
-      float: right;
+  }
+  .socials {
+    display: inline-block;
+    float: right;
 
-      i {
-        display: inline-block;
-        padding: 11px;
-        border-right: 1px solid black;
-        box-shadow: 2px 0 2px -2px #888;
+    i {
+      display: inline-block;
+      padding: 11px;
+      border-right: 1px solid black;
+      box-shadow: 2px 0 2px -2px #888;
 
-        &:hover{
-          color: $green;
-          cursor: pointer;
-        }
+      &:hover{
+        color: $green;
+        cursor: pointer;
       }
-      i:first-child {
-        border-left: 1px solid black;
-        box-shadow: 2px 0 2px -2px #888;
-      }
+    }
+    i:first-child {
+      border-left: 1px solid black;
+      box-shadow: 2px 0 2px -2px #888;
     }
   }
 }
