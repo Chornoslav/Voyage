@@ -403,7 +403,8 @@
     display: inline-block;
     margin: 0 20px;
     text-align: left;
-    padding: 20px; }
+    padding: 20px;
+    outline: none; }
     .clients .quote p {
       font-size: 14px;
       margin-bottom: 5px;
@@ -426,7 +427,7 @@
     justify-content: center; }
     .footer .container .col {
       width: calc(25% - 10px);
-      margin: 0 5px; }
+      padding: 0 5px; }
       .footer .container .col .col1,
       .footer .container .col .col2 {
         display: flex;
@@ -531,6 +532,16 @@
 @media screen and (max-width: 575px) {
   .container {
     width: 100%; }
+  .header .container {
+    display: block; }
+    .header .container .logo {
+      width: 100%;
+      display: block;
+      text-align: center; }
+    .header .container .menu {
+      width: 100%;
+      text-align: left;
+      display: block; }
   .topbar .member .member-item {
     display: block;
     border: none;
@@ -553,6 +564,22 @@
     display: inline-block; }
   .holidays .container .icons-container button {
     display: none !important; }
+  .travel .fa {
+    padding: 0 10px;
+    font-size: 40px; }
+  .travel div[class^="slide"] h1 {
+    font-size: 28px; }
+  .travel div[class^="slide"] p {
+    font-size: 16px; }
+  .travel div[class^="slide"] .button-block .button {
+    width: auto;
+    height: auto; }
+    .travel div[class^="slide"] .button-block .button a {
+      font-size: 16px;
+      padding: 20px; }
+  .travel div[class^="slide"] .button-block .button1 {
+    margin-right: 0;
+    margin-bottom: 10px; }
   .footer .container {
     display: block; }
     .footer .container .col {

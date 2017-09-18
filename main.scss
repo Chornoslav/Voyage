@@ -27,6 +27,24 @@ $dark: rgb(44, 62, 80);
   .container{
     width: 100%;
   }
+  .header{
+
+    .container{
+      display: block;
+
+      .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      .menu{
+        width: 100%;
+        text-align: left;
+        display: block;
+      }
+    }
+  ;
+  }
   .topbar{
     .member{
       .member-item{
@@ -68,6 +86,36 @@ $dark: rgb(44, 62, 80);
         display: none !important;
       }
     }
+  }
+  .travel{
+    .fa{
+      padding: 0 10px;
+      font-size: 40px;
+    }
+    div[class^="slide"] {
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 16px;
+      }
+      .button-block{
+        .button{
+          width: auto;
+          height: auto;
+
+          a{
+            font-size: 16px;
+            padding: 20px;
+          }
+        }
+        .button1{
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
   }
   .footer{
     .container{
